@@ -1,0 +1,45 @@
+/* Rollover CSS Component */
+
+/* Documentation */
+/* rollover.css */
+/* William Erickson 08/12/2016 */
+
+/* ALL IMAGES HAVE SAME DIMENSIONS  */
+/* 500PX x 281PX in this example  */
+
+#wrap {
+   margin:  2% 0 0 6%;
+   width: 98%;
+}
+
+div.rollover {
+    margin: 5% auto;
+    width:80%;	  
+}
+
+div.rollover ul {
+   padding: 0;
+   list-style-type: none;
+   clear: both;
+}
+
+div.rollover ul li {
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    width:48%;    
+}
+
+div.rollover ul li img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.image-trans:hover  {
+    transition: all 0.35s ease;
+    transform: scaleX(1.7) scaleY(1.7); 
+}
+
+#clear {
+    clear: both;
+}

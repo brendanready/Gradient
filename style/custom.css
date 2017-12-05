@@ -1,0 +1,73 @@
+/* Custom.css file for page styling */
+
+.page-section {
+  border-top:#0C8E70 1px solid;
+line-height: 2.5rem;
+  padding: 1rem 0rem;
+  margin-bottom: 35px;
+background: white;
+}
+
+.page-header {
+    margin-bottom: 1rem;
+    padding: 4rem 1rem;
+    font-size: 1.7rem;
+    letter-spacing: .25rem;
+    font-weight: 300;
+    text-transform:uppercase;
+}
+
+.custom-example {
+    color: black;
+}
+
+.custom-example,
+.custom-example form {
+    margin-bottom: 0;
+    padding: 1rem 0rem;
+   border:#0C8E70 1px solid;
+    background: white;
+}
+
+.ScrollDown_Btn {
+
+}
+
+
+/* TABLET PORTRAIT */
+@media (min-width: 550px) {
+  .header {
+    margin-top: 18rem; 
+    }
+ 
+  .example-grid .column,
+  .example-grid .columns {
+    margin-bottom: 1.5rem; 
+    }
+  .custom-section {
+    padding: 3rem 0rem; 
+    }
+    
+    .page-header {
+  margin-bottom: 1rem;
+    padding: 4rem 0rem;
+  font-size: 2.5rem;
+  letter-spacing: .25rem;
+  font-weight: 700; 
+    }
+}
+
+
+/* DESKTOP AND UP */
+@media (min-width: 960px) {
+.page-section {
+    line-height: 6rem;
+    padding: 6rem 0rem;
+ }
+    .page-header {
+  margin-bottom: 1rem;
+    padding: 4rem 2rem;
+  font-size: 4.5rem;
+  letter-spacing: .25rem;
+  font-weight: 700; }
+}

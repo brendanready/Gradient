@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Documentation -->
+<!-- myAccordian Plugin  -->
+<!-- William Erickson 08/12/2016 -->
+
+<!-- Font Awsome used for icons. Customize by changing class within the <i></i> tags -->
+<!-- Change Panel Heading text within the <h2></h2> tags -->
+<!-- Change Open Panel Content text within the <p></p> tags -->
+
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <title>myAccordian Demo</title>
+  
+  <!-- Font Awsome CDN -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+  <!-- myAccordian CSS -->
+  <link href="myAccordian.css" type="text/css" rel="stylesheet">
+  
+  <!-- jQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+  
+  <!-- myAccordian Plugin -->
+  <script src="jquery.myAccordian.js"> </script>   	
+  
+  <!-- Document Ready Call .displayAccordian Method -->
+  <script>
+        $(document).ready(function(){
+            $(".myAccordian").displayAccordian();
+        });
+  </script>
+</head>
+
+<body>
+	       <!-- Container for myAccordian -->
+           <div  class="myAccordian">
+              
+              <!-- h2 id=one is the panel1 title panel -->
+                                          
+                             <!-- Icon Font Awsome Class Goes Here -->
+              <h2 id="one"  ><i id="font1" class="fa fa-plus-square-o" aria-hidden="true"></i> &nbsp; &nbsp;First Panel</h2>
+              
+              <!-- Container for panel1 Content -->
+              <div id="panel1" class="hide" >
+                  <p>
+                   Nam vitae tincidunt elit. Mauris sit amet molestie odio. Ut aliquet accumsan nisl, ut aliquet lorem porttitor sit amet. Mauris porttitor feugiat elit, et commodo libero facilisis vel.   
+                  </p>
+              </div>
+              
+              <!-- h2 id=two is the panel2 title button -->
+                                         
+                            <!-- Icon Font Awsome Class Goes Here -->
+              <h2 id="two" ><i id="font2" class="fa fa-plus-square-o" aria-hidden="true"></i> &nbsp; &nbsp;Second Panel</h2>
+              
+              <!-- Container for panel2 content -->
+              <div id="panel2" class="hide" >
+                  <p>
+                   Pellentesque in ligula felis. Duis velit orci, venenatis non elit sed, pharetra malesuada turpis. Nulla eu euismod risus, quis tempus libero. Mauris ut ipsum in augue iaculis lobortis.   
+                  </p>
+              </div>
+              
+              <!-- h2 id=three is the panel3 title button -->
+                                           
+                              <!-- Icon Font Awsome Class Goes Here -->
+              <h2 id="three" ><i id="font3" class="fa fa-plus-square-o" aria-hidden="true"></i> &nbsp; &nbsp;Third Panel</h2>
+              
+              <!-- Container for panel3 content -->
+              <div id="panel3" class="hide">
+                  <p>
+                   Proin enim nibh, rhoncus at urna nec, rutrum pharetra urna. Aliquam ornare commodo magna in finibus. Suspendisse dictum orci faucibus, iaculis arcu at, malesuada nulla.   
+                  </p>
+              </div>
+               
+           </div>
+</body>
+</html>

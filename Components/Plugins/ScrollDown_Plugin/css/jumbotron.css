@@ -1,0 +1,205 @@
+/* -------------------------------- 
+Jumbotron
+-------------------------------- */
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: gray;
+    border-radius: 0.3rem;
+    color: inherit;
+}
+
+.jumbotron h1,
+.jumbotron .h1 {
+    color: inherit;
+    font-size: 3.0rem;
+    font-weight: 400;
+}
+
+.jumbotron p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.jumbotron > hr,
+.jumbotron-hr {
+    border-top-color: slategray;
+}
+
+.jumbotron-fullscreen {
+    height: 100vh;
+}
+
+.jumbotron-fullscreenimage {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    max-height: 100%;
+}
+
+
+/* ---- MOBILE LANDSCAPE ------ */
+
+@media (min-width: 432px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* ---- TABLET VIEW ------ */
+
+@media (min-width: 768px) {
+    .jumbotron {
+        padding: 4rem 2rem;
+    }
+}
+
+
+/* ---- DESKTOP VIEW ------ */
+
+@media (min-width: 1024px) {
+    .jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .jumbotron h1,
+    .jumbotron .h1 {
+        font-size: 72px;
+    }
+}
+
+
+
+/* -------------------------------- 
+Containers
+-------------------------------- */
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}
+
+.jumbotron .container {
+    max-width: 100%;
+}
+
+.narrow-container {
+    max-width: 15rem;
+    width: 100%;
+    margin: 2rem auto;
+    border: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Fluid Containers*/
+
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ---- MOBILE LANDSCAPE ------ */
+
+@media (min-width: 432px) {
+    .container {}
+    .narrow-container {
+        max-width: 26rem;
+        width: 100%;
+        margin: 2rem auto;
+        border: 0;
+    }
+}
+
+
+/* ---- TABLET VIEW ------ */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 576px;
+    }
+    .narrow-container {
+        max-width: 28rem;
+        width: 100%;
+        margin: 2rem auto;
+        border: 0;
+    }
+}
+
+
+/* ---- DESKTOP VIEW ------ */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 940px;
+    }
+    .narrow-container {
+        max-width: 50rem;
+        width: 100%;
+        margin: 2rem auto;
+        border: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+/* -------------------------------- 
+Text Overlay
+-------------------------------- */
+
+.text-overlay {
+    position: relative;
+    bottom: 90%;
+    background: rgba(10, 4, 7, 0.40);
+    color: white;
+    text-align: center;
+}
+
+
+/* ---- DESKTOP VIEW ------ */
+
+@media (min-width: 1024px) {
+    .text-overlay {
+        bottom: 22rem;
+    }
+}
+
+.clearfix {
+    clear: both;
+}

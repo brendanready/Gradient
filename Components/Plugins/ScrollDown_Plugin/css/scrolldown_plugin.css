@@ -1,0 +1,121 @@
+
+/* -------------------------------- 
+Font-Awesome Up Down Arrow
+-------------------------------- */
+
+.fa-angle-down, .fa-angle-down:before   {
+    color: white;
+    font-size: 5rem;
+}
+
+
+/* -------------------------------- 
+BackToTop Button
+-------------------------------- */
+
+.ScrollDown_Btn {
+    height: 95px;
+    width: 100%;
+
+    position: absolute;
+    bottom: 4%;
+
+    /* image replacement properties */
+    line-height: 2.0rem;
+    overflow: hidden;
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+
+/* -------------------------------- 
+TABLET VIEW
+-------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .ScrollDown_Btn {
+
+    }
+}
+
+
+/* -------------------------------- 
+DESKTOP VIEW
+-------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+    .ScrollDown_Btn {
+        height: 80px;
+    }
+    
+    .fa-angle-down {
+        height: 80px;
+        width: 80px;
+
+    }
+    
+    .fa-angle-down:hover {
+        background: rgba(10, 4, 7, 0.15);
+        border-radius: 50px;
+
+    }
+    
+        .fa-angle-down.square-hover:hover {
+        background: rgba(10, 4, 7, 0.45);
+            border-radius: 0px;
+    }
+}
+
+
+/*
+
+.ScrollDown_Btn {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+    line-height: 2.0rem;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    white-space: nowrap;
+    background: teal;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+*/
+
+
+/* -------------------------------- 
+BackToTop Button
+-------------------------------- */
+
+
+
+.BackToTop_Btn.visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.BackToTop_Btn.fade_out {
+    /* if the user keeps scrolling down, the button fades out and becomes transparent */
+    opacity: .4;
+}
+
+.no-touch .BackToTop_Btn:hover {
+    background-color: slategray;
+    opacity: 1;
+}
+
+
+

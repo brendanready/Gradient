@@ -1,0 +1,41 @@
+/* myAccordian.css  */
+/* William Erickson 08/12/2016  */
+
+
+/* Closed Panel Header */
+.myAccordian h2  {
+    display: block;
+    
+    /* Customize Closed Panel Header Here  */
+    font-size: 1.5em;
+    background-color: darkolivegreen;
+    height: 35px;
+    padding-left: 15px;
+    padding-top: 6px;
+    color: white;
+    border-radius: 8px;
+    margin: 5px 0 10px 0; 
+}
+
+/* Open Panel Header  */
+h2#one.show1, h2#two.show1, h2#three.show1 {
+    
+    /* Customize Open Panel Header Here  */
+    background-color: darkorange;
+    border-radius: 8px 8px 0 0;   
+}
+
+/* Open Panel Containers  */
+#panel1, #panel2, #panel3 p {
+    
+    /* Customize Open Panel Paragraph Here  */
+    margin: 10px 10px 20px 10px;   
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}

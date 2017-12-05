@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumbotron</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/jumbotron.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+
+    </style>
+    <script>
+        // Picture element HTML5 shiv
+        document.createElement("picture");
+    </script>
+    <script src="picturefill.min.js" async></script>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>A Jumbotron</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p> <a href="#" role="button">Learn more</a> </p>
+    </div>
+    
+    <div class="container">
+        <div class="jumbotron">
+            <h1>A Jumbotron inside a Container</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="m-y-2">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
+        </div>
+    </div>
+    
+    <div class="jumbotron">
+        <div class="container white">
+            <h1>A Container with a white background inside a Jumbotron!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="m-y-2">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
+        </div>
+    </div>
+    
+    <div class="narrow-container">
+        <div class="jumbotron">
+            <h1>A Jumbotron inside a narrow-container!</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <p> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
+        </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-fullscreen">
+        <h1>A Jumbotron Full Screen</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p> <a href="#" role="button">Learn more</a> </p>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1>Fluid jumbotron - A Container inside a Jumbotron-fluid Jumbotron</h1>
+            <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <h1>Fluid jumbotron ---- A Jumbotron-fluid Jumbotron</h1>
+        <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <h1>Fluid jumbotron ---- A Jumbotron-fluid Jumbotron inside a Container</h1>
+            <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+    
+    <div class="jumbotron-fullwidthimage"> <img src="Picture_1920.jpg">
+        <div class="container text-overlay">
+            <h1 class="">An Image</h1>
+            <p class="">Great for image descriptions!</p>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid custom Whitestripes">
+            <h1>A Custom Styled Jumbotron</h1>
+            <p>Custom styling is great!</p>
+    </div>
+
+    <div class="jumbotron-fullscreenimage">
+        <picture>
+            <source media="(max-width: 480px)" srcset="Picture_Small.jpg 480w" />
+            <source media="(max-height: 769px)" srcset="
+						Picture_1280.jpg 1280w," />
+            <source media="(max-width: 769px)" srcset="
+						Picture_Medium.jpg 768w,
+						Picture_Small.jpg 480w" />
+            <source media="(min-width: 769px)" srcset="
+						Picture_1280.jpg 1280w,
+						Picture_Medium.jpg 768w,
+						Picture_Small.jpg 480w" /> <img srcset="Picture_1920.jpg" alt="Elephants"> </picture>
+        <div class="container text-overlay">
+            <h1 class="">An Image</h1>
+            <p class="">Great for image descriptions!</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>

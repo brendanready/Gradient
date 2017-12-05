@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- Documentation -->
+<!-- myTabMenuBar Plugin  -->
+<!-- William Erickson 08/12/2016 -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+  
+    <title>myTabMenu</title>
+
+    <link href="tabMenuBar.css" type="text/css" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+      
+    <!-- tabMenuBar Plugin -->
+    <script src="jquery.tabMenuBar.js"></script> 
+       
+    <!-- Document Ready Call .displayTabMenuBar Method -->
+  <script>
+        $(document).ready(function(){
+            $("#container").displayTabMenuBar();
+        });
+  </script>   
+        
+</head>
+
+<body>
+	    <!-- Container for myTabMenuBar (wrapper) -->
+	    <div id="container" >
+           
+            <!-- Container for Tabs -->
+            <div id="tabs" >
+                  <ul>
+                    <li><a id="tab1">Learning Objectives</a></li>
+                    <li><a id="tab2">Learning Modules</a></li>
+                    <li><a id="tab3">Learning Outcomes</a></li>
+                    </ul>
+             </div>
+             
+                 <!-- Container for Panel1 -->
+                 <article id="panel1" >
+                   
+                 <!-- Change Tab Content Here -->
+                    <h2>Learning Objectives</h2>
+                    
+                <!-- Change Content for Panel Here -->   
+                    <p>
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum pretium eros ac consectetur. Praesent eget venenatis risus, sit amet mollis tortor. Donec ornare, metus at suscipit molestie, metus urna tempus arcu, et malesuada libero justo sit amet nibh. Etiam fringilla elit gravida nisi lobortis, vel suscipit odio blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris urna erat, fringilla a nisi vel, vehicula lacinia lectus. Sed finibus in ipsum varius aliquam. Integer mattis est egestas malesuada eleifend. Donec commodo sem sed augue lobortis cursus. Nam venenatis porttitor tortor, blandit feugiat mauris aliquam non. Integer viverra metus at ligula sollicitudin sodales. Integer efficitur, risus accumsan laoreet hendrerit, libero quam rutrum diam, ac tincidunt massa tellus eu tortor. Vivamus ut malesuada orci. Etiam congue eleifend nulla, sed feugiat est facilisis eu. Vestibulum vel diam libero. Suspendisse lacinia bibendum nulla.   
+                    </p> 
+                 </article>
+                 
+                 <!-- Container for Panel2 -->
+                 <article id="panel2" >
+                    
+                  <!-- Change Tab Content Here -->    
+                     <h2>Learning Modules</h2>
+                     
+                  <!-- Change Content for Panel Here -->      
+                     <p>
+                      Cras dapibus consequat iaculis. Integer feugiat consequat urna, vel condimentum purus vestibulum nec. Sed porta leo et iaculis dignissim. Cras efficitur sed lorem non bibendum. Proin a nisl orci. Vivamus scelerisque neque lectus, ut dignissim sapien venenatis sit amet. Aliquam erat volutpat. Mauris aliquam lacus erat, sed scelerisque metus commodo eget.  
+                    </p>
+                    
+                 </article>
+                 
+                 <!-- Container for Panel3 -->
+                 <article id="panel3" >
+                    
+                  <!-- Change Tab Content Here -->   
+                     <h2>Learning Outcomes</h2>
+                     
+                  <!-- Change Content for Panel Here -->   
+                     <p>
+                      Sed placerat diam leo, et volutpat sapien fermentum in. Pellentesque nunc arcu, blandit id gravida ut, viverra nec nisl. Fusce semper, libero ac fringilla feugiat, purus lectus maximus lacus, ut sagittis dui lacus non lacus. Nulla facilisi. Vestibulum venenatis tincidunt tellus, et facilisis dui varius a. Suspendisse ullamcorper imperdiet efficitur. Suspendisse porttitor mauris sit amet ligula pretium aliquet a nec quam. Donec semper massa ligula, id dictum metus convallis vitae. Suspendisse mattis leo in mauris vulputate, non maximus quam maximus. Sed lorem ante, rutrum id convallis sed, interdum eu nisi.  
+                    </p>
+                     
+                 </article>
+	    </div>
+</body>
+</html>

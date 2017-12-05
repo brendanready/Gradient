@@ -1,0 +1,824 @@
+/*Documentation*/
+ /*Framework CSS*/
+ /*Kamiya Garg 08/12/2016*/ 
+
+/*--------  PUT PROPERTIES IN TO OVERIDE RESETS  --------*/
+
+	header, nav, section, aside, article, footer, video, audio, main {      display: block;
+}
+* {
+    padding:0;
+    margin:0;
+}
+
+body{
+   
+    background-color: #2fa1e0;
+    background: linear-gradient(#2fa1e0,#fff) fixed;
+    padding-left: 0px;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/*  -------  FRAMEWORK STYLE  ------ */
+
+.shadow {
+ text-shadow: 2px 2px 8px #000;   
+}
+
+.transformUpper {
+  text-transform:uppercase;  
+}
+
+.transformLower {
+  text-transform:lowercase;  
+}
+
+.transformCapital {
+  text-transform:capitalize;  
+}
+
+/*--------  Headings  --------*/
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0.67em 0;
+  color: darkcyan;
+  letter-spacing: 2px;
+ 
+
+}
+
+h2 {
+    font-size: 1.9em;
+    margin: 0.65em 0 .50em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+h3 {
+    font-size: 1.7em;
+    margin: 0.55em 0 .40em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 0.40em 0 .30em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+h5 {
+    font-size: 1.2em;
+    margin: 0.30em 0 .20em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 0.20em 0 .10em;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+/*--------- Lists  ------------*/
+ul, ol {
+    margin:6px 20px 6px 40px;
+    color: darkblue;
+}
+
+	ul, ol{
+        margin-bottom: 20px;
+}
+
+	ul {
+        list-style: none outside; 
+}
+
+	ol {
+        list-style: decimal; 
+}
+
+	ol, ul.square, ul.circle, ul.disc {
+        margin-left: 30px; 
+}
+
+	ul.square {
+        list-style: square outside;
+}
+
+	ul.circle {
+        list-style: circle outside;
+}
+
+	ul.disc {
+        list-style: disc outside;
+}
+
+	ul ul, ul ol,
+	ol ol, ol ul {
+        margin: 4px 0 5px 30px; 
+        font-size: 90%;
+}
+
+	ul ul li, ul ol li,
+	ol ol li, ol ul li {
+        margin-bottom: 6px;
+}
+
+	li { 
+        line-height: 18px;
+        margin-bottom: 12px;
+}
+
+	ul.large li {
+        line-height: 21px; 
+}
+
+	li p {
+        line-height: 21px; 
+}
+
+/*  ------ Nav -------*/
+
+.menuStyle ul li{
+    display: inline-block;
+    margin:10px;
+    padding:10px;
+    color:darkblue;
+    background-color: #fff;
+    border: solid 2px darkblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 4px #ccc;
+    
+}
+
+.menuStyle ul li a{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*-------Responsive Images------*/
+
+	img{
+		max-width: 100%;
+		height: auto; 
+        margin:10px;
+        display: block;
+}
+
+/* ------ Paragraphs ------- */
+
+article p, p{
+    font-size: 1.2em; 
+    line-height: 1.2;
+    margin:0 5px 15px;
+}
+
+/*-----	Blockquotes  ------*/
+	blockquote, blockquote p { 
+        font-size: 2rem; 
+        line-height: 24px; 
+        color: #777;
+        font-style: italic; 
+}
+
+	blockquote { 
+        margin: 0 0 20px;
+        padding: 9px 20px 0 19px; 
+        border-left: 1px solid #ddd;
+}
+
+	blockquote cite { 
+        display: block; 
+        font-size: 12px;
+        color: #555; 
+}
+
+	blockquote cite:before {
+        content: "\2014 \0020";
+}
+
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited {
+        color: #555; 
+}
+
+	hr {
+        border: solid #ddd;
+        border-width: 1px 0 0; 
+        clear: both; 
+        margin: 10px 0 30px; 
+        height: 0; 
+}
+
+/*--------  Alignments --------*/
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+/*--------  Inline Text Elements --------*/
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+cite {
+    color: red;
+    font-weight: 400;
+}
+
+var {
+    font-weight: bold;
+}
+
+code {
+    padding: .1rem .3rem;
+    margin: 0 .2rem;
+    line-height: 2.2rem;
+    white-space: nowrap;
+    color: brown;
+    background: lightgreen;;
+    border: 2px solid forestgreen;
+    border-radius: 4px;
+}
+
+pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/*--------  Links --------*/
+	a, a:visited {
+        color: #333; 
+         background-color: transparent;
+        text-decoration: underline; 
+        outline: 0; 
+}
+
+	a:hover, a:focus { 
+        color: #000;
+}
+
+	p a, p a:visited { 
+        line-height: inherit;
+}
+
+/* ------ TABLES ------- */
+
+.tableBorder {
+   padding:10px;
+    border: 2px solid darkblue;
+    width:100%;
+}
+
+.tableBorder th, .tableBorder td{
+    text-align:center;
+    padding:5px;
+    
+}
+
+.tableBorder tr:first-child {
+    background-color: aliceblue;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tableStrip  {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableStrip th, .tableStrip td {
+    text-align: left;
+    padding: 8px;
+    margin-left: 10px;
+    border:solid 2px darkblue;
+}
+
+.tableStrip tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+
+/*--------Forms -------*/
+form {
+    max-width: 95%; 
+    padding: 2%;
+    font-size: 20px;
+    background: linear-gradient(to right, white , cornflowerblue);
+    
+}
+
+main form {
+    margin: 2% 3%;
+}
+
+label {
+    color:darkblue;
+    padding:5px ; 
+    display: block;
+}
+
+
+label span {
+    color: red;
+}
+textarea {
+    width: 12.5em;
+    display: block;
+    color:darkslateblue;
+    background-color: azure;
+    border: solid 2px blue;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 1px;
+}
+input[type="text"], input[type="email"], select  {
+    width: 12.5em;
+    height:1.8em;
+    display: block;
+    background-color: azure;
+    color:darkslateblue;
+    font-size: 18px;
+    border: solid 2px blue;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+
+input[type="radio"] {
+    box-sizing:border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:darkblue;
+    margin-bottom: 20px;
+    
+}
+input[type="submit"] {
+    display: block; 
+   
+}
+
+
+
+
+.chkBox {
+    display:block;
+    margin-top:10px;
+}
+
+.chkBox label{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer; 
+    width:20px;
+    height:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+
+/*Change the border, margin, and padding in all browsers (opinionated)*/
+
+fieldset {
+  border: 1px solid darkblue;
+  margin: 0 2px;
+  font-size: 18px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: darkblue;
+  font-size: 18px;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+
+button,
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+
+/*Remove the inner border and padding in Firefox.*/
+
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/*Restore the focus styles unset by the previous rule.*/
+ 
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/* ------ Button size -----*/
+.esBtn {
+    padding:.4em 1em;
+    margin:10px 25px;
+    background: linear-gradient(to bottom, white , cornflowerblue);
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 cadetblue, 0 6px 20px 0 cadetblue;
+    color:darkslateblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.esBtn:hover {
+    padding:.4em 1em;
+    margin:10px 25px;
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 blue, 0 6px 20px 0 cadetblue;
+    color:darkblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.esBtn:active {
+    padding:.4em 1em;
+    margin:10px 25px;
+    background-color:darkslateblue;
+    border: solid 2px red;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 red, 0 6px 20px 0 cadetblue;
+    color:white;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.sBtn {
+    padding:.5em 2em;
+    margin:10px 25px;
+    background: linear-gradient(to top, white , cornflowerblue);
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 1px 10px 0 cadetblue, 0 6px 10px 0 cadetblue;
+    color:darkslateblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.sBtn:hover {
+    padding:.5em 2em;
+    margin:10px 25px;
+    background-color:cornflowerblue;
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 blue, 0 6px 20px 0 cadetblue;
+    color:darkblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.sBtn:active {
+    padding:.5em 2em;
+    margin:10px 25px;
+    background-color:darkslateblue;
+    border: solid 2px red;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 red, 0 6px 20px 0 cadetblue;
+    color:white;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.nBtn {
+    padding:.7em 5em;
+    margin:10px 25px;
+    
+    background: linear-gradient(to left, white , cornflowerblue);
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 cadetblue, 0 6px 20px 0 cadetblue;
+    color:darkslateblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.nBtn:hover {
+    padding:.7em 5em;
+    margin:10px 25px;
+    background-color:cornflowerblue;
+    border: solid 2px blue;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 blue, 0 6px 20px 0 cadetblue;
+    color:darkblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.nBtn:active {
+    padding:.7em 5em;
+    margin:10px 25px;
+    background-color:darkslateblue;
+    border: solid 2px red;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px 0 red, 0 6px 20px 0 cadetblue;
+    color:white;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+
+.lBtn {
+    padding:.8em 4em;
+    margin:.6em 1.3em;
+    
+    background: linear-gradient(to right, white , cornflowerblue);
+    border: solid 2px blue;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 cadetblue, 0 6px 20px 0 cadetblue;
+    color:darkslateblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+.lBtn:hover {
+    padding:.8em 4em;
+    margin:.6em 1.3em;
+    background-color:cornflowerblue;
+    border: solid 2px blue;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 blue, 0 6px 20px 0 cadetblue;
+    color:darkblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.lBtn:active {
+    padding:.8em 4em;
+    margin:.6em 1.3em;
+    background-color:cornflowerblue;
+    border: solid 2px blue;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 red, 0 6px 20px 0 cadetblue;
+    color:darkblue;
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+/*--- Style theme ---- */
+
+/*Backgrounds*/
+
+.yellow {
+    background: #CC8D14;
+}
+
+.brown {
+    background: #665129;
+}
+
+.orange {
+    background: #FF6500;
+}
+
+.teal {
+    background: #0C8E70;
+}
+
+.green {
+    background: #15E479;
+}
+
+/* ----- Text Colors ---- */
+
+.whitetext {
+    color: white;
+}
+
+.yellowtext {
+    color: #CC8D14;
+}
+
+.browntext {
+    color: #665129;
+}
+
+.orangetext {
+    color: #FF6500;
+}
+
+.tealtext {
+    color: #0C8E70;
+}
+
+.greentext {
+    color: #15E479;
+}
+
+.aquatealtext {
+    background: -webkit-linear-gradient(aqua,teal);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.tealredtext {
+    background: -webkit-linear-gradient(teal,red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.spearminttext {
+    background: -webkit-linear-gradient(yellow,#15E479);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.chocolateminttext {
+        background: -webkit-linear-gradient(#93310f,#15E479);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+
+/*--- Border colors ---- */
+.yellowborder {
+    border-color: #CC8D14;
+}
+
+.brownborder {
+    border-color: #665129;
+}
+
+.orangeborder {
+    border-color: #FF6500;
+}
+
+.tealborder {
+    border: #0C8E70 1px solid;
+}
+
+.greenborder {
+    border-color: #15E479;
+}
+
+footer{
+    margin:25px;   
+    text-align: center;
+    height: 40px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.quickFloatLeft {
+    float: left;
+}
+
+.quickFloatRight {
+    float:right;
+}
+
+.fullWidth {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.maxFullWidth {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media print {
+.noPrint {
+    display:none;
+  }
+}
+
+ /*For tablet and up*/
+
+@media (min-width: 550px) {
+  
+.tableStrip  {
+    width: 80%;
+}
+    
+.tableBorder {
+    width:80%;
+}
+ 
+
+
+/*--------Forms -------*/
+form {
+    max-width: 80%; 
+    padding: 2%;
+}
+
+label { 
+    display: inline-block;
+    width:40%;
+    }
+
+textarea {
+    width: 23.5em;
+    display:inline-block;
+    margin-bottom: 5px;
+    
+}
+input[type="text"], input[type="email"], select  {
+    width: 23.5em;
+    height:2.2em;
+    display:inline-block;
+}
+
+.chkBox label{
+    margin-left: 10px;
+    font-size: 20px
+}
+
+input[type="checkbox"] { 
+    width:26px;
+    height:26px;   
+}
+
+fieldset {
+  margin: 0 2px;
+  font-size: 18px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  font-size: 22px;
+  display: table;
+  max-width: 80%;
+}
+    
+}
+
+.overlay {
+    background: rgba(10, 4, 7, 0.45);
+}

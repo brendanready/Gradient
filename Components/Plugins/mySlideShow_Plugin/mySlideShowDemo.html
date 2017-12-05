@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- Documentation -->
+<!-- mySlideshow Plugin  -->
+<!-- William Erickson 08/12/2016 -->
+
+<!-- ALL IMAGES ARE THE SAME SIZE -->
+<!-- 900PX x 506PX IN THIS DEMO -->
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  
+  <title>MY Slide Show Demo</title>
+  
+  <!-- mySlideShow CSS -->
+  <link href="mySlideShow.css" type="text/css" rel="stylesheet">
+  
+  <!-- JQuery -->
+  <script src="js/jquery-3.1.0.min.js"></script>
+      
+ <!-- mySlideShow Plugin  -->
+  <script src="jquery.mySlideShow.js"></script>	      
+       
+  <!-- Document Ready Call .displaySlideShow Method -->
+  <script>
+        $(document).ready(function(){
+            $("#container").displaySlideShow();
+        });
+  </script>       
+        
+</head>
+
+<body>
+	
+	<!-- Wrapping Container  -->
+	<div id="container">
+	   
+	    <!-- Slideshow Container  -->
+	    <div id="slideshow">
+           
+            <!-- Image Container  -->
+            <div>
+                <img id="1" class="mySlides"  src="img/image1web.jpg" alt="Image 1" >
+                <img id="2" class="mySlides"  src="img/image2web.jpg" alt="Image 2">
+                <img id="3" class="mySlides"  src="img/image3web.jpg" alt="Image 3">
+                <img id="4" class="mySlides"  src="img/image4web.jpg" alt="Image 4">
+                <img id="5" class="mySlides"  src="img/image5web.jpg" alt="Image 5">
+            </div>
+           
+	    </div>
+	
+        <!-- Widget Container  -->
+	    <div id="widget" >
+	        <ul>
+	            <li><a id="img1">01</a></li>
+	            <li><a id="img2">02</a></li>
+	            <li><a id="img3" >03</a></li>
+	            <li><a id="img4" >04</a></li>
+	            <li><a id="img5" >05</a></li>
+	        </ul>
+	    </div>
+	    
+	</div>
+</body>
+</html>

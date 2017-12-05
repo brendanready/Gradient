@@ -1,0 +1,83 @@
+/* BackToTop css file */
+
+/* -------------------------------- 
+Font-Awesome Up Arrow
+-------------------------------- */
+
+.fa-chevron-up {
+    color: white;
+    font-size: 28px;
+}
+
+
+/* -------------------------------- 
+BackToTop Button
+-------------------------------- */
+
+.BackToTop_Btn {
+    height: 55px;
+    width: 55px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    line-height: 2.0rem;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 10px;
+    white-space: nowrap;
+    background: teal;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.BackToTop_Btn.visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.BackToTop_Btn.fade_out {
+    /* if the user keeps scrolling down, the button fades out and becomes transparent */
+    opacity: .4;
+}
+
+.no-touch .BackToTop_Btn:hover {
+    background-color: slategray;
+    opacity: 1;
+}
+
+
+/* -------------------------------- 
+TABLET VIEW
+-------------------------------- */
+
+@media only screen and (min-width: 768px) {
+    .BackToTop_Btn {
+        right: 25px;
+        bottom: 25px;
+    }
+}
+
+
+/* -------------------------------- 
+DESKTOP VIEW
+-------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+    .BackToTop_Btn {
+        height: 60px;
+        width: 60px;
+        right: 28px;
+        bottom: 28px;
+    }
+    .BackToTop_Btn:hover {
+        background-color: slategray;
+        opacity: 1;
+    }
+}

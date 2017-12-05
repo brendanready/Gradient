@@ -1,0 +1,61 @@
+/* myTabMenuBar.css  */
+/* William Erickson 08/12/2016  */
+
+
+/* Customize Tab Menu Bar Here */
+ #tabs  {
+    height: 52px;
+    background-color: darkolivegreen;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Customize Open Panel Heading Here */
+#container h2 {
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+
+/* Customize Open Panel Content Here */
+#container article p {
+    margin-left: 20px;
+}
+
+#tabs li {
+    float: left;
+    padding: 10px;
+    
+    /* Custom Color for Hidden Tab Panel Here */
+    background-color: bisque;
+    margin: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+#tabs li:first-of-type {
+    
+    /* Custom Color for Displayed Tab Here */
+    background-color: white;
+}
+
+/* Costomize Hover State Here */
+#tabs li a:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+#tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;      
+}
+
+#tabs li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2px;
+    text-decoration: none;
+}
+
+#panel2, #panel3 {
+    display: none;
+}

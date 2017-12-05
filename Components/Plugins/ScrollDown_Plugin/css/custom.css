@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+        max-height: 100%;
+}
+
+.redtext:before {
+    color: rgba(10, 4, 7, 0.45);
+}
+
+
+.white {
+    background: white;
+}
+
+.darkblue {
+    background: darkblue;
+}
+
+.custom {
+  text-align: center;
+    background: slategray;
+    color: white;
+    text-shadow: 2px 1px #ff0000;
+}
+
+.Whitestripes {
+    background-image: repeating-linear-gradient( 135deg, #333, transparent, transparent 1%, transparent 50%);
+    background-size: 44px 44px;
+}
+
+a {
+  color: slategray;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+Content Wrapper
+-------------------------------- */
+.wrapper {
+  max-width: 54rem;
+  width: 90%;
+  margin: 2rem auto;
+  border: 0;
+}
+
+.wrapper::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* -------------------------------- 
+Main components 
+-------------------------------- */
+header {
+  background: slategray;
+  height: 120px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.6em;
+  margin-bottom: .2em;
+}
+
+header p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: white;
+}
+
+    /*DESKTOP VIEW*/
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
+  header h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding-top: 2.6em;
+  }
+}
+
+main p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 2em 0;
+}
+    /*DESKTOP VIEW*/
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+

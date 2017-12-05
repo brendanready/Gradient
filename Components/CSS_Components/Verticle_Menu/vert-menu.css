@@ -1,0 +1,40 @@
+<style>
+/* Verticle Menu CSS  */
+
+/* Documentation */
+/* vert-menu.css */
+/* William Erickson 08/12/2016 */
+        
+.vert-menu ul {
+    list-style-type: none;
+}
+
+.vert-menu ul li {
+    width: 98%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: .5em; 
+    list-style-type: none;
+    
+    /* Custimize Background color here */
+    background-color: darkolivegreen;
+}
+
+.vert-menu li a {
+   
+    display: block;
+    padding: .5em 0 .5em 0;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; 
+    
+    /* Custimize Text color here */
+    color: white;
+}
+
+.vert-menu ul li a:hover {
+    
+    /* Custimize Hover color here */
+    background-color: orange;
+}
+</style>

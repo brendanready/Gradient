@@ -1,0 +1,96 @@
+/*Documentation*/
+ /*Reset CSS*/
+ /*Kamiya Garg 08/12/2016*/ 
+
+/* -------  Reset & Basics  ---------*/ 
+
+html {
+  font-family: sans-serif; 
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, q, small, strike, strong, sub, sup, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; 
+        
+}
+	article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; 
+}
+
+	body {
+		line-height: 1; 
+        
+}
+
+	ol, ul {
+		list-style: none; 
+}
+
+	blockquote, q {
+		quotes: none;
+}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+}
+img {
+  border-style: none;
+}
+ /*Remove the default vertical scrollbar in IE.*/
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; 
+}
+
+
+
+
+/* Show the overflow in Edge.*/
+ 
+
+button,
+input { 
+  overflow: visible;
+}
+
+/* Remove the inheritance of text transform*/
+button,select { 
+  text-transform: none;
+  
+}
+
+button,
+html [type="button"], 
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; 
+}
+
+/*Remove the inner border and padding in Firefox.*/
+
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}

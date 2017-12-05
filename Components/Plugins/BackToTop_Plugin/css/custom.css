@@ -1,0 +1,98 @@
+/* custom css file */
+
+/* -------------------------------- 
+General styles
+-------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  color: black;
+  background-color: white;
+}
+
+a {
+  color: slategray;
+  text-decoration: none;
+}
+
+
+/* -------------------------------- 
+Content Wrapper
+-------------------------------- */
+.wrapper {
+  max-width: 54rem;
+  width: 90%;
+  margin: 2rem auto;
+  border: 0;
+}
+
+.wrapper::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* -------------------------------- 
+Main components 
+-------------------------------- */
+header {
+  background: slategray;
+  height: 120px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 1.6em;
+  margin-bottom: .2em;
+}
+
+header p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: white;
+}
+
+    /*DESKTOP VIEW*/
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 200px;
+  }
+  header h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding-top: 2.6em;
+  }
+}
+
+main p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 2em 0;
+}
+    /*DESKTOP VIEW*/
+@media only screen and (min-width: 1024px) {
+  main p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}

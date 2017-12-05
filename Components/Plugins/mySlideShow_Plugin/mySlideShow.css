@@ -1,0 +1,65 @@
+/* mySlideShow.css  */
+/* William Erickson 08/09/2016  */ 
+
+/* ALL IMAGES ARE SAME DIMENSIONS  */
+
+/* SET max-width TO IMAGE WIDTH */
+#container {
+    max-width: 900px;
+}
+
+
+ /* Custom Color for Border Here */
+#slideshow {
+    border: solid lightgrey 1em;
+    background-color: lightgrey;
+}
+
+ /* Custom Color for Widget Here */
+#widget li a {
+    color: black;
+}
+
+/* Custom Color for Widget and Cursor Hover Here */
+#widget li a:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+#container {
+	width: 	90%;
+    min-width: 320px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#slideshow img {
+    max-width: 100%;
+    height: auto;        
+}
+
+#widget ul {
+    list-style-type: none;
+    margin-left: 25px;
+    margin-top: px;
+    padding: 0;    
+}
+
+#widget li {
+    float: left;
+    margin-top: 0;
+}
+
+#widget li a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mySlides {
+    display: none;
+}
